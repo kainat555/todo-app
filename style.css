@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+    background-image: url("backgroundImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ input{
+    width: 300px;
+    border-radius: 15px;
+    height: 45px; 
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: purple;
+    font-weight: bold;
+}
+.main{
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+h1{
+    color: purple;
+    font-size: 3em;
+}
+button{
+    color: purple;
+    border: none;
+    outline: none;
+    font-size: 2em;
+}
+ul > li{
+    list-style-type: none;
+    margin: 10px;
+    margin: 0 auto;
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+    font-size: 24px;
+}
+.dlt{
+    color: #fff;
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: medium !important;
+}
+.edit{
+    background-color: green;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: medium !important;
+}

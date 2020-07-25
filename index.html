@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0ae396e2b.js" crossorigin="anonymous"></script>
+    <title>TODO app</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>To Do lists</h1>
+        <label for="text">
+            <input type="text" id="todo-item" placeholder="Enter what do you want to do..">
+        </label>
+        <button onclick="addItem()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        <button onclick="dltAll()"><i class="fa fa-trash" aria-hidden="true"></i></button>
+    <div>
+        <ul id="show-item"></ul>
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+
+</html>
