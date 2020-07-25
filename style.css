@@ -30,14 +30,13 @@ button{
     outline: none;
     font-size: 2em;
 }
-ul > li{
-    list-style-type: none;
+tr > td{
     margin: 10px;
     margin: 0 auto;
     text-align: center;
     color: purple;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
 }
 .dlt{
     color: #fff;
@@ -47,6 +46,7 @@ ul > li{
     border-radius: 10px;
     margin: 10px;
     font-size: medium !important;
+    cursor: pointer;
 }
 .edit{
     background-color: green;
@@ -56,4 +56,11 @@ ul > li{
     border-radius: 10px;
     margin: 10px;
     font-size: medium !important;
+    cursor: pointer;
+}
+#addBtn{
+    cursor: pointer;
+}
+#dltBtn{
+    cursor: pointer;
 }

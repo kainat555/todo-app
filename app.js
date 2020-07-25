@@ -4,33 +4,31 @@ let showItem = document.querySelector("#show-item");
 function addItem() {
     let addItem = document.querySelector("#todo-item");
 
-    let li = document.createElement("li");
-    let liText = document.createTextNode(addItem.value);
-    li.appendChild(liText);
+    let tr = document.createElement("tr");
+    let td = document.createElement("td");
+    let tdText = document.createTextNode(addItem.value);
+    tr.appendChild(td).appendChild(tdText);
 
-    if(document.getElementById("todo-item").value === ""){
-        {
+if(addItem.value === ""){
         alert("Please insert something");
-    }
-    }
-
+}
 
     let dltBtn = document.createElement("button");
     let dltBtnText = document.createTextNode("Remove");
     dltBtn.appendChild(dltBtnText);
     dltBtn.setAttribute("class" , "dlt")
     dltBtn.setAttribute("onclick", "dltItem(this)");
-    li.appendChild(dltBtn);
+    tr.appendChild(dltBtn);
 
 
-    showItem.appendChild(li);
+    showItem.appendChild(tr);
     addItem.value = "";
 
 
     let editBtn = document.createElement("button");
     let editBtnText = document.createTextNode("Edit");
     editBtn.appendChild(editBtnText);
-    li.appendChild(editBtn);
+    tr.appendChild(editBtn);
     editBtn.setAttribute("class" , "edit")
     editBtn.setAttribute("onclick", "editItem(this)");
 }
@@ -46,7 +44,7 @@ function dltAll() {
 }
 
 function editItem(e) {
-    let val = e.parentNode.childNodes[0].nodeValue; 
+    let val = e.parentNode.childNodes[0].childNodes[0].nodeValue; 
     let valueEdit = prompt("Enter what you want to edit", val);
-    e.parentNode.childNodes[0].nodeValue = valueEdit;  
+    e.parentNode.childNodes[0].childNodes[0].nodeValue = valueEdit; 
 }
