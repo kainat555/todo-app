@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0ae396e2b.js" crossorigin="anonymous"></script>
+    <title>TO-DO App</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBOQh9lONfGBFULZJlBXOGUBukQqRhPUvQ",
+            authDomain: "to-do-app-ba2a0.firebaseapp.com",
+            databaseURL: "https://to-do-app-ba2a0.firebaseio.com",
+            projectId: "to-do-app-ba2a0",
+            storageBucket: "to-do-app-ba2a0.appspot.com",
+            messagingSenderId: "856093233203",
+            appId: "1:856093233203:web:4e43a751dbc9c089205346",
+            measurementId: "G-XCSXL84ZPT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+//   firebase.analytics();
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>To-Do List</h1>
+        <label for="text">
+            <input type="text" id="todo-item" placeholder="Enter what do you want to do..">
+        </label>
+        <button id="addBtn" onclick="addItem()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        <button id="dltBtn" onclick="dltAll()"><i class="fa fa-trash" aria-hidden="true"></i></button>
+        <div>
+            <table id="show-item"></table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
